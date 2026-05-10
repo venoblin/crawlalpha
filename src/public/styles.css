@@ -1,3 +1,21 @@
+:root {
+  --black: #0a0a0a;
+  --dark-gray: #171717;
+  --md-gray: #1e1e1e;
+  --light-gray: #737373;
+  --hover-gray: #252525;
+  --white: #e5e5e5;
+}
+
+@font-face {
+  font-family: 'Saira';
+  src:
+    url('Saira.ttf') format('ttf'),
+    url('Saira-Italic.ttf') format('ttf');
+}
+
 body {
-  background: red;
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Saira', sans-serif;
 }
