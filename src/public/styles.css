@@ -5,6 +5,7 @@
   --light-gray: #737373;
   --hover-gray: #252525;
   --white: #e5e5e5;
+  --default-spacing: 1rem;
 }
 
 @font-face {
@@ -14,8 +15,30 @@
     url('Saira-Italic.ttf') format('ttf');
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: var(--black);
   color: var(--white);
   font-family: 'Saira', sans-serif;
+  padding: var(--default-spacing);
+}
+
+nav {
+  margin-bottom: var(--default-spacing);
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+}
+
+.logo path {
+  stroke: var(--white);
+  stroke-linecap: square;
+  stroke-width: 2;
 }
